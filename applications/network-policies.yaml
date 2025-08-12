@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: namespaces
+  name: network-policies
   namespace: argocd  # ArgoCD's namespace
 spec:
   project: default
