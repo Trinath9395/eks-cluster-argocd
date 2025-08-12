@@ -7,7 +7,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "0"
 spec:
-  project: default
+  project: cluster
   source:
     repoURL: https://github.com/DAWS-82S/eks-cluster-argocd.git
     targetRevision: main   # or a tag/commit hash
