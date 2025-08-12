@@ -4,6 +4,8 @@ kind: Application
 metadata:
   name: namespaces
   namespace: argocd  # ArgoCD's namespace
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
 spec:
   project: default
   source:
