@@ -19,3 +19,4 @@ spec:
       selfHeal: true        # revert out-of-band changes
     syncOptions:
       - CreateNamespace=true
+      - ApplyOutOfSyncOnly=true
