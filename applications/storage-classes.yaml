@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: namespaces
+  name: storage-classes
   namespace: argocd  # ArgoCD's namespace
   # dependency, lowest priorty will be created first
   annotations:
@@ -12,7 +12,7 @@ spec:
   source:
     repoURL: https://github.com/DAWS-82S/eks-cluster-argocd.git
     targetRevision: main   # or a tag/commit hash
-    path: namespaces        # folder in repo with Kubernetes YAMLs
+    path: sc        # folder in repo with Kubernetes YAMLs
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd

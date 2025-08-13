@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: platform-root1
+  name: platform-root
   namespace: argocd  # ArgoCD's namespace
   finalizers:
     - resources-finalizer.argocd.argoproj.io  # Ensures children are deleted when parent is deleted
